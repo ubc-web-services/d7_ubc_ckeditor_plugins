@@ -1,0 +1,88 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: veades
+ * Date: 2015-04-17
+ * Time: 2:29 PM
+ */
+
+/**
+ * Implements hook_ckeditor_plugin().
+ */
+function ubc_ckeditor_plugins_ckeditor_plugin() {
+    return array(
+        'accordion' => array(
+          'name' => 'accordion',
+          'desc' => t('CKEditor widget for an accordion.'),
+          'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/accordion/',
+          'buttons' => array(
+            'accordion' => array(
+              'label' => 'Accordion',
+              'icon' => 'icon-accordion.png',
+            ),
+          ),
+        ),
+        /*'columns' => array(
+            'name' => 'columns',
+            'desc' => t('CKEditor plugin to insert columns.'),
+            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/columns/',
+            'buttons' => array(
+                'Columns' => array(
+                    'label' => 'Insert Columns',
+                    'icon' => 'icons/columns.png',
+                ),
+            ),
+        ),*/
+        '2columns' => array(
+            'name' => '2columns',
+            'desc' => t('CKEditor plugin to insert 2 columns.'),
+            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/2columns/',
+            'buttons' => array(
+                '2columns' => array(
+                    'label' => 'Insert 2 Columns',
+                    'icon' => '2columns.png',
+                ),
+            ),
+        ),
+        '3columns' => array(
+            'name' => '3columns',
+            'desc' => t('CKEditor plugin to insert 3 columns.'),
+            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/3columns/',
+            'buttons' => array(
+                '3columns' => array(
+                    'label' => 'Insert 3 Columns',
+                    'icon' => '3columns.png',
+                ),
+            ),
+        ),
+        '3tabs' => array(
+            'name' => '3tabs',
+            'desc' => t('CKEditor plugin to insert 3 tabs.'),
+            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/3tabs/',
+            'buttons' => array(
+                '3tabs' => array(
+                    'label' => 'Insert 3 Tabs',
+                    'icon' => '3tabs.png',
+                ),
+            ),
+        ),
+    );
+}
+
+/**
+ * Implements hook_entity_view().
+ */
+function ubc_ckeditor_plugins_entity_view($entity, $type, $view_mode, $langcode) {
+
+    // Make the jQuery UI Accordion plugin available.
+    drupal_add_library('system', 'ui.accordion');
+    // Load our JS file that implements jQuery UI Accordion.
+    drupal_add_js(drupal_get_path('module', 'ubc_ckeditor_plugins') . '/js/ubc_ckeditor_plugins.js');
+
+
+}
+
+/*function ubc_ckeditor_plugins_ckeditor_settings_alter(&$settings, $conf) {
+    // Change the ckeditor config path.
+    $settings['customConfig'] = drupal_get_path('module', 'ubc_ckeditor_plugins') . '/ckeditor.config.js';
+}*/
