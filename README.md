@@ -1,4 +1,6 @@
-# UBC CKeditor Plugins
+# UBC CKeditor Plugins 
+
+**In development!**
 
 Drupal module that adds CLF/Bootstrap friendly plugins for Ckeditor wysiwyg.
 
