@@ -100,9 +100,6 @@ function ubc_ckeditor_plugins_entity_view($entity, $type, $view_mode, $langcode)
     drupal_add_library('system', 'ui.accordion');
     // Load our JS file that implements jQuery UI Accordion.
     drupal_add_js(drupal_get_path('module', 'ubc_ckeditor_plugins') . '/js/ubc_ckeditor_plugins.js');
-    // Load general css for all plugins
-    drupal_add_css(drupal_get_path('module', 'ubc_ckeditor_plugins') . '/css/ubc_ckeditor_plugins.css');
-
 
 }
 
