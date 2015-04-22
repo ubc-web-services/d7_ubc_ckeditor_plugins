@@ -4,3 +4,4 @@ package = UBC IT Web Services
 
 core = 7.x
 dependencies[] = ckeditor
+files[] = css/ubc_ckeditor_plugins.css

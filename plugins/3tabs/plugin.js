@@ -27,15 +27,15 @@
                             '<li rel="tab2">Title 2</li>' +
                             '<li rel="tab3">Title 3</li>' +
                             '</ul>' +
-                            '<div class="tab_container">' +
+                            '<div class="tab_container tab-pane">' +
                             '<h5 class="tab_drawer_heading" rel="tab1">Title 1</h5>' +
                             '<div id="tab1" class="tab_content"><p>Tab 1 content</p></div>' +
                             '</div>' +
-                            '<div class="tab_container">' +
+                            '<div class="tab_container tab-pane">' +
                             '<h5 class="tab_drawer_heading" rel="tab2">Title 2</h5>' +
                             '<div id="tab2" class="tab_content"><p>Tab 2 content</p></div>' +
                             '</div>' +
-                            '<div class="tab_container">' +
+                            '<div class="tab_container tab-pane">' +
                             '<h5 class="tab_drawer_heading" rel="tab3">Title 3</h5>' +
                             '<div id="tab3" class="tab_content"><p>Tab 3 content</p></div>' +
                             '</div>' +
@@ -48,40 +48,7 @@
                     content: {
                         selector: 'div.tabs-3'
                     }
-/*
-                    tab1: {
-                        selector: 'div.tabs-3 ul.tabs li[rel="tab1"]',
-                        allowedContent: 'strong em'
-                    },
-                    tab2: {
-                        selector: 'div.tabs-3 ul.tabs li:nth-child(2)',
-                        allowedContent: 'strong em'
-                    },
-                    tab3: {
-                        selector: 'div.tabs-3 ul.tabs li:nth-child(3)',
-                        allowedContent: 'strong em'
-                    },
-                    title1: {
-                        selector: 'div.tabs-3 h5.tab_drawer_heading [rel="tab1"]',
-                        allowedContent: 'strong em'
-                    },
-                    title2: {
-                        selector: 'div.tabs-3 h5.tab_drawer_heading [rel="tab2"]',
-                        allowedContent: 'strong em'
-                    },
-                    title3: {
-                        selector: 'div.tabs-3 h5.tab_drawer_heading [rel="tab3"]',
-                        allowedContent: 'strong em'
-                    },
-                    content1: {
-                        selector: '#tab1'
-                    },
-                    content2: {
-                        selector: '#tab2'
-                    },
-                    content3: {
-                        selector: '#tab3'
-                    }*/
+
                 },
                 upcast: function(element) {
                     return element.name == 'div' && element.hasClass('tabs-3');

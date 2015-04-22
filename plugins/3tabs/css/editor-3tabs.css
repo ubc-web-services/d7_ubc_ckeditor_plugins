@@ -6,11 +6,28 @@
 }
 
 
-.tab-container {
+.tab_container,
+ ul.tabs,
+ h5.tab_drawer_heading,
+.tab_content {
     margin: 5px;
     box-shadow: 0 1px 1px #ddd inset;
     border: 1px solid #cccccc;
     background: #fff;
+}
+
+ul.tabs {
+    list-style: none;
+    margin-bottom: 5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.tabs > li {
+    float: left;
+    line-height: 20px;
+    padding: 4px;
+    border: 1px solid #777;
 }
 
 .tabs-3:before {

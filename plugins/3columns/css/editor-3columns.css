@@ -3,10 +3,8 @@
     margin: 10px;
     background: #eee;
     border: 1px dashed #ddd;
-}
-
-.columns-3 [class*="span"] {
-    float: left;
+    overflow: hidden;
+    width: 100%;
 }
 
 .col {
@@ -14,6 +12,7 @@
     box-shadow: 0 1px 1px #ddd inset;
     border: 1px solid #cccccc;
     background: #fff;
+    float: left;
 }
 
 .columns-3:before {

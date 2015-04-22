@@ -26,7 +26,7 @@
                             '<div class="col span4"><p>Second Column</p></div>' +
                             '<div class="col span4"><p>Third Column</p></div>' +
                             '</div>',
-                allowedContent: 'div(!columns-3,clearfix,row-fluid);' +
+                allowedContent: 'div(!columns-3,clearfix,row-fluid);p' +
                                 'div(!col,span4);',
                 // Minimum HTML which is required by this widget to work.
                 requiredContent: 'div(columns-3)',
