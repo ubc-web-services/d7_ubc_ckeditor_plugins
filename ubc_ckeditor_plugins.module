@@ -33,6 +33,28 @@ function ubc_ckeditor_plugins_ckeditor_plugin() {
                 ),
             ),
         ),*/
+        'callout' => array(
+            'name' => 'callout',
+            'desc' => t('CKEditor plugin to insert a callout.'),
+            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/callout/',
+            'buttons' => array(
+                'callout' => array(
+                    'label' => 'Insert Callout',
+                    'icon' => 'callout.png',
+                ),
+            ),
+        ),
+        'mediaobject' => array(
+            'name' => 'mediaobject',
+            'desc' => t('CKEditor plugin to insert a media object.'),
+            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/mediaobject/',
+            'mediaobject' => array(
+                'callout' => array(
+                    'label' => 'Insert Media Object',
+                    'icon' => 'mediaobject.png',
+                ),
+            ),
+        ),
         '2columns' => array(
             'name' => '2columns',
             'desc' => t('CKEditor plugin to insert 2 columns.'),

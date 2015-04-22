@@ -1,4 +1,4 @@
-.columns-3 {
+.media {
     position: relative;
     margin: 10px;
     background: #eee;
@@ -6,30 +6,34 @@
     box-sizing: border-box;
 }
 
-.columns-3 [class*="span"] {
+.pull-left {
     float: left;
     width: 30%;
 }
 
-.col {
+.pull-left,
+.media-body {
     margin: 5px;
     box-shadow: 0 1px 1px #ddd inset;
     border: 1px solid #cccccc;
     background: #fff;
 }
+.media-body {
+    margin-left: 35%;
+}
 
-.columns-3:before {
+.media:before {
   background: none repeat scroll 0 0 #141;
   color: #fff;
-  content: "3 Columns";
+  content: "Media Object";
   opacity: 0.65;
   position: absolute;
   right: 0;
   top: 0;
-  display: table; /* 2 */
+  display: table;
 }
 
-.columns-3:after {
+.media:after {
   content: " "; 
   display: table; 
   clear: both;

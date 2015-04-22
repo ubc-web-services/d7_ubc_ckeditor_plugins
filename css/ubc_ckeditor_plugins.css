@@ -1,13 +1,50 @@
-.clearfix {
-    *zoom: 1
+.callout {
+  box-sizing: border-box;
+  float: right;
+  width: 50%;
+  padding: 20px;
+  margin: 10px 0px 10px 10px;
+  background-color: #eee;
+  font-size: 1.25em;
+  font-style: italic;
 }
 
-.clearfix:before, .clearfix:after {
-    display: table;
-    line-height: 0;
-    content: ""
-}
 
-.clearfix:after {
-    clear: both
+/* ACCORDIONS */
+/* ----------------------------------- */
+.accordion {
+  border-bottom: 1px solid silver;
+  border-top: 1px solid silver;
+  margin-bottom: 0;
+}
+.accordion-tab {
+  //border-bottom: 1px solid @pharmgrey;
+  padding: 1em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.accordion-tab:hover {
+  color: #2f5d7c;
+}
+.accordion-tab:after {
+  position: absolute;
+  content: "\F055";
+  font-family: 'fontawesome';
+  color: #002145;
+  padding: .5em .25em;
+  font-size: 1.8em;
+  top: 0;
+  //line-height: 1em;
+  right: 0;
+  height: 100%;
+  //margin-top: 0;
+}
+.accordion-open .accordion-tab {
+  background-color: #002145;
+  color: white;
+}
+.accordion-open .accordion-tab:after {
+  content: "\F056";
+  color: white;
 }
