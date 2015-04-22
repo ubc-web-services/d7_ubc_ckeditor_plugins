@@ -49,6 +49,7 @@
                         selector: 'div.tabs-3'
                     }
 
+
                 },
                 upcast: function(element) {
                     return element.name == 'div' && element.hasClass('tabs-3');

@@ -21,19 +21,24 @@
             // Register the widget.
             editor.widgets.add('2columns', {
                 template:   '<div class="columns-2 clearfix row-fluid">' +
-                            '<div class="column span6"><p>First Column</p></div>' +
-                            '<div class="column span6"><p>Second Column</p></div>' +
+                            '<div class="col span6"><p>First Column</p></div>' +
+                            '<div class="col span6"><p>Second Column</p></div>' +
                             '</div>',
                 // Minimum HTML which is required by this widget to work.
-                requiredContent: 'div(columns-2)',
-                editables: {
-                    content: {
-                        selector: '.columns-2'
-                    }
-                },
                 allowedContent: 'div(!columns-2,clearfix,row-fluid);' +
                                 'div(!column,span6);',
                 requiredContent: 'div(columns-2)',
+                editables: {
+                    col1: {
+                        selector: 'div.columns-2 > div:nth-child(1)',
+                        allowedContent: 'p br ul ol li strong em img div'
+                    },
+                    col2: {
+                        selector: 'div.columns-2 > div:nth-child(2)',
+                        allowedContent: 'p br ul ol li strong em img div'
+                    }
+                },
+
                 upcast: function(element) {
                     return element.name == 'div' && element.hasClass('columns-2');
                 }

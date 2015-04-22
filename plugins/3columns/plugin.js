@@ -26,13 +26,22 @@
                             '<div class="col span4"><p>Second Column</p></div>' +
                             '<div class="col span4"><p>Third Column</p></div>' +
                             '</div>',
-                allowedContent: 'div(!columns-3,clearfix,row-fluid);p' +
+                allowedContent: 'div(!columns-3,clearfix,row-fluid);' +
                                 'div(!col,span4);',
                 // Minimum HTML which is required by this widget to work.
                 requiredContent: 'div(columns-3)',
                 editables: {
-                    content: {
-                        selector: '.columns-3'
+                    col1: {
+                        selector: 'div.columns-3 > div:nth-child(1)',
+                        allowedContent: 'p br ul ol li strong em img div'
+                    },
+                    col2: {
+                        selector: 'div.columns-3 > div:nth-child(2)',
+                        allowedContent: 'p br ul ol li strong em img div'
+                    },
+                    col3: {
+                        selector: 'div.columns-3 > div:nth-child(3)',
+                        allowedContent: 'p br ul ol li strong em img div'
                     }
                 },
 
