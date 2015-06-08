@@ -1,23 +1,26 @@
-.callout {
+.list-group {
   position: relative;
   margin: 10px;
   background: #eee;
   border: 1px dashed #ddd;
   box-sizing: border-box;
-  float: right;
-  width: 40%;
 }
-.callout-inner {
+.list-group-item-heading,
+.list-group-item-text,
+.list-group-contents {
   margin: 5px;
 	box-shadow: 0 1px 1px #ddd inset;
 	border: 1px solid #cccccc;
 	background: #fff;
 	padding: 1em;
 }
-.callout:before {
+.list-group-item-heading {
+  font-weight: bold;
+}
+.list-group:before {
   background: none repeat scroll 0 0 #007eab;
   color: #fff;
-  content: "Callout";
+  content: "List Group";
   opacity: 0.65;
   position: absolute;
   right: 0;

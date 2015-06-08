@@ -25,7 +25,7 @@
 				
 				editables: {
 	        contents: {
-	          selector: '.callout'
+	          selector: '.callout-inner'
 	        }
 	      },
 	      

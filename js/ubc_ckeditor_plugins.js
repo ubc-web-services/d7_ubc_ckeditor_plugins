@@ -1,15 +1,3 @@
-/*(function($) {
-	$(document).ready(function(){
-    // Apply jQuery UI Accordion behaviors to specifically classed elements.
-    $('.accordion').accordion({
-      header: ".accordion__title",
-      collapsible: true,
-      active: false,
-      animated: false
-    });
-	});
-}(jQuery));*/
-
 (function ($) {
   Drupal.behaviors.ubc_ckeditor_plugins = {
     attach: function (context, settings) {

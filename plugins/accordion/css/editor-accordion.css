@@ -1,27 +1,29 @@
-.callout {
+.accordion {
   position: relative;
-  margin: 10px;
-  background: #eee;
-  border: 1px dashed #ddd;
-  box-sizing: border-box;
-  float: right;
-  width: 40%;
+	margin: 10px;
+	background: #eee;
+	border: 1px dashed #ddd;
 }
-.callout-inner {
+.accordion-tab,
+.accordion-content {
   margin: 5px;
 	box-shadow: 0 1px 1px #ddd inset;
 	border: 1px solid #cccccc;
 	background: #fff;
 	padding: 1em;
 }
-.callout:before {
+.accordion-tab {
+  font-weight: bold;
+}
+
+.accordion:before {
   background: none repeat scroll 0 0 #007eab;
   color: #fff;
-  content: "Callout";
+  content: "Accordion";
   opacity: 0.65;
   position: absolute;
-  right: 0;
-  top: 0;
   padding: 2px 4px;
   border-bottom-left-radius: 3px;
+  right: 0;
+  top: 0;
 }

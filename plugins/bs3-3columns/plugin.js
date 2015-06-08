@@ -3,31 +3,31 @@
  */
 (function($){
 
-    CKEDITOR.plugins.add('3columns', {
+    CKEDITOR.plugins.add('bs3-3columns', {
         requires: 'widget',
 
         init: function( editor ) {
 
             // Add our plugin-specific CSS to style the widget within CKEditor.
-            editor.addContentsCss( this.path + 'css/editor-3columns.css' );
+            editor.addContentsCss( this.path + 'css/editor-bs3-3columns.css' );
 
             // Register the toolbar buttons for the CKEditor editor instance.
-            editor.ui.addButton('3columns',
+            editor.ui.addButton('bs3-3columns',
                 {
-                    label : 'Insert 3 Columns',
-                    icon : this.path + '3columns.png',
-                    command : '3columns'
+                    label : 'Insert 3 Bootstrap v.3 columns',
+                    icon : this.path + 'bs3-3columns.png',
+                    command : 'bs3-3columns'
                 });
 
             // Register the widget.
-            editor.widgets.add('3columns', {
-                template:   '<div class="columns-3 clearfix row-fluid">' +
-                            '<div class="span4"><p>First Column</p></div>' +
-                            '<div class="span4"><p>Second Column</p></div>' +
-                            '<div class="span4"><p>Third Column</p></div>' +
+            editor.widgets.add('bs3-3columns', {
+                template:   '<div class="columns-3 row">' +
+                            '<div class="col-md-4"><p>First Column</p></div>' +
+                            '<div class="col-md-4"><p>Second Column</p></div>' +
+                            '<div class="col-md-4"><p>Third Column</p></div>' +
                             '</div>',
-                allowedContent: 'div(!columns-3,clearfix,row-fluid);' +
-                                'div(!span4);',
+                allowedContent: 'div(!columns-3,row);' +
+                                'div(!col-md-4);',
                 // Minimum HTML which is required by this widget to work.
                 requiredContent: 'div(columns-3)',
                 editables: {

@@ -5,33 +5,29 @@
     border: 1px dashed #ddd;
     box-sizing: border-box;
 }
-
 .columns-2 [class*="span"] {
     float: left;
     width: 45%;
-}
-
-
-.column {
     margin: 5px;
     box-shadow: 0 1px 1px #ddd inset;
     border: 1px solid #cccccc;
     background: #fff;
+    padding: 1em;
 }
-
 .columns-2:before {
-    background: none repeat scroll 0 0 #141;
+    background: none repeat scroll 0 0 #007eab;
     color: #fff;
     content: "2 Columns";
     opacity: 0.65;
     position: absolute;
     right: 0;
     top: 0;
-    display: table; /* 2 */
+    display: table; 
+    padding: 2px 4px;
+    border-bottom-left-radius: 3px;
 }
-
 .columns-2:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " "; 
+    display: table; 
     clear: both;
 }

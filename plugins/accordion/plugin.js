@@ -12,19 +12,19 @@ CKEDITOR.plugins.add('accordion', {
     });
 
     // Add our plugin-specific CSS to style the widget within CKEditor.
-    editor.addContentsCss( this.path + 'editor-accordion.css' );
+    editor.addContentsCss( this.path + 'css/editor-accordion.css' );
 
     // Register the widget.
     editor.widgets.add('accordion', {
       template:
-        '<div class="accordion">' +
+        '<div class="accordion accordion-closed">' +
           '<div class="accordion-tab" tabindex="0">Accordion title goes in here</div>' +
           '<div class="accordion-content clearfix"><p>Accordion contents happen in here</p></div>' +
         '</div>',
       editables: {
         title: {
           selector: '.accordion-tab',
-          allowedContent: 'strong em'
+          allowedContent: 'em'
         },
         content: {
           selector: '.accordion-content'
@@ -32,6 +32,7 @@ CKEDITOR.plugins.add('accordion', {
       },
 
       allowedContent: 'div(!accordion); div(!accordion-content); div(!accordion-tab)',
+			
 //
 //      requiredContent: 'div(accordion)',
 
