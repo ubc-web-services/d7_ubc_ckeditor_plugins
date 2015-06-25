@@ -18,7 +18,3 @@ Drupal module that adds CLF/Bootstrap friendly plugins for Ckeditor wysiwyg.
 
 
 Also included is the rough and incomplete "columns" plugin that uses dialog for settings (as experiment).
-
-
-
-
