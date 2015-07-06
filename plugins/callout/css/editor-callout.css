@@ -25,3 +25,8 @@
   padding: 2px 4px;
   border-bottom-left-radius: 3px;
 }
+/* fix for resized images */
+.callout img {
+	width: 100%;
+	height: auto;
+}

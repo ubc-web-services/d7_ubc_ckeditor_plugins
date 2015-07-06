@@ -42,3 +42,8 @@
   display: table; 
   clear: both;
 }
+/* fix for resized images */
+.media img {
+	width: 100%;
+	height: auto;
+}

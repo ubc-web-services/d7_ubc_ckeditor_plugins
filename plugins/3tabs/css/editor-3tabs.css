@@ -36,3 +36,8 @@ ul.tabs {
   padding: 2px 4px;
   border-bottom-left-radius: 3px;
 }
+/* fix for resized images */
+.tab_content img {
+	width: 100%;
+	height: auto;
+}

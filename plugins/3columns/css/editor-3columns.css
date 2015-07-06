@@ -31,3 +31,8 @@
   display: table; 
   clear: both;
 }
+/* fix for resized images */
+.columns-3 img {
+	width: 100%;
+	height: auto;
+}

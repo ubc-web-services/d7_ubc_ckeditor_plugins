@@ -27,3 +27,8 @@
   right: 0;
   top: 0;
 }
+/* fix for resized images */
+.accordion-content img {
+	width: 100%;
+	height: auto;
+}
