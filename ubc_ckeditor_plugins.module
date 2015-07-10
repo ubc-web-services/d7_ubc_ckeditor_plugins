@@ -92,6 +92,28 @@ function ubc_ckeditor_plugins_ckeditor_plugin() {
                 ),
             ),
         ),
+        'bs3-2columns-2-1' => array(
+            'name' => 'bs3-2columns-2-1',
+            'desc' => t('CKEditor plugin to insert 2 Bootstrap v.3 columns (two thirds, then one third).'),
+            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/bs3-2columns-2-1/',
+            'buttons' => array(
+                'bs3-2columns-2-1' => array(
+                    'label' => 'Insert 2 Bootstrap v.3 columns (two thirds, then one third)',
+                    'icon' => 'bs3-2columns-2-1.png',
+                ),
+            ),
+        ),
+        'bs3-2columns-1-2' => array(
+            'name' => 'bs3-2columns-1-2',
+            'desc' => t('CKEditor plugin to insert 2 Bootstrap v.3 columns (one third, then two thirds).'),
+            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/bs3-2columns-1-2/',
+            'buttons' => array(
+                'bs3-2columns-1-2' => array(
+                    'label' => 'Insert 2 Bootstrap v.3 columns (one third, then two thirds)',
+                    'icon' => 'bs3-2columns-1-2.png',
+                ),
+            ),
+        ),
         'bs3-3columns' => array(
             'name' => 'bs3-3columns',
             'desc' => t('CKEditor plugin to insert 3 Bootstrap v.3 columns.'),
