@@ -3,24 +3,24 @@
  */
 (function($){
 
-    CKEDITOR.plugins.add('3columns', {
+    CKEDITOR.plugins.add('threecolumns', {
         requires: 'widget',
 
         init: function( editor ) {
 
             // Add our plugin-specific CSS to style the widget within CKEditor.
-            editor.addContentsCss( this.path + 'css/editor-3columns.css' );
+            editor.addContentsCss( this.path + 'css/editor-threecolumns.css' );
 
             // Register the toolbar buttons for the CKEditor editor instance.
-            editor.ui.addButton('3columns',
+            editor.ui.addButton('threecolumns',
                 {
-                    label : 'Insert 3 Columns',
-                    icon : this.path + '3columns.png',
-                    command : '3columns'
+                    label : 'Insert 3 Bootstrap v.2 Columns',
+                    icon : this.path + 'threecolumns.png',
+                    command : 'threecolumns'
                 });
 
             // Register the widget.
-            editor.widgets.add('3columns', {
+            editor.widgets.add('threecolumns', {
                 template:   '<div class="columns-3 clearfix row-fluid">' +
                             '<div class="span4"><p>First Column</p></div>' +
                             '<div class="span4"><p>Second Column</p></div>' +
@@ -48,12 +48,7 @@
                 upcast: function(element) {
                     return element.name == 'div' && element.hasClass('columns-3');
                 }
-
             });
-
         }
-
-
     });
-
 })(jQuery);

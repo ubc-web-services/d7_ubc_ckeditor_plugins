@@ -14,7 +14,7 @@
             // Register the toolbar buttons for the CKEditor editor instance.
             editor.ui.addButton('bs3-3columns',
                 {
-                    label : 'Insert 3 Bootstrap v.3 columns',
+                    label : 'Insert 3 columns',
                     icon : this.path + 'bs3-3columns.png',
                     command : 'bs3-3columns'
                 });

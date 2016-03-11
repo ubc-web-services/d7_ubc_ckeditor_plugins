@@ -31,7 +31,7 @@ CKEDITOR.plugins.add('accordion', {
         }
       },
 
-      allowedContent: 'div(!accordion); div(!accordion-content); div(!accordion-tab)',
+      allowedContent: 'div(!accordion,accordion-closed); div(!accordion-content,clearfix); div(!accordion-tab)',
 			
 //
 //      requiredContent: 'div(accordion)',
@@ -45,6 +45,6 @@ CKEDITOR.plugins.add('accordion', {
   }
 
 });
-
+ 
 
 })(jQuery);

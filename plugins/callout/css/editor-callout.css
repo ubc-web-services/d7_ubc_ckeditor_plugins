@@ -22,6 +22,8 @@
   position: absolute;
   right: 0;
   top: 0;
+  line-height: 1em;
+  z-index: 9999;
   padding: 2px 4px;
   border-bottom-left-radius: 3px;
 }

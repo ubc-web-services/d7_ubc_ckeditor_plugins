@@ -3,24 +3,24 @@
  */
 (function($){
 
-    CKEDITOR.plugins.add('3tabs', {
+    CKEDITOR.plugins.add('threetabs', {
         requires: 'widget',
 
         init: function( editor ) {
 
             // Add our plugin-specific CSS to style the widget within CKEditor.
-            editor.addContentsCss( this.path + 'css/editor-3tabs.css' );
+            editor.addContentsCss( this.path + 'css/editor-threetabs.css' );
 
             // Register the toolbar buttons for the CKEditor editor instance.
-            editor.ui.addButton('3tabs',
+            editor.ui.addButton('threetabs',
                 {
                     label : 'Insert 3 tabs',
-                    icon : this.path + '3tabs.png',
-                    command : '3tabs'
+                    icon : this.path + 'threetabs.png',
+                    command : 'threetabs'
                 });
 
             // Register the widget.
-            editor.widgets.add('3tabs', {
+            editor.widgets.add('threetabs', {
                 template:   '<div class="tabs-3 tab-wrapper">' +
                             '<ul class="tabs">' +
                             '<li class="active" rel="tab1">Title 1</li>' +
@@ -48,18 +48,11 @@
                     content: {
                         selector: 'div.tabs-3'
                     }
-
-
                 },
                 upcast: function(element) {
                     return element.name == 'div' && element.hasClass('tabs-3');
                 }
-
             });
-
         }
-
-
     });
-
 })(jQuery);
