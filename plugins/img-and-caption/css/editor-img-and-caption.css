@@ -1,0 +1,43 @@
+figure {
+  position: relative;
+  margin: 10px;
+  display: block;
+  background: #eee;
+  border: 1px dashed #ddd;
+  box-sizing: border-box;
+}
+figcaption {
+  display: block;
+}
+div[data-widget-image],
+figcaption {
+  margin: 5px;
+  box-shadow: 0 1px 1px #ddd inset;
+  border: 1px solid #cccccc;
+  background: #fff;
+  padding: 1em;
+  overflow: hidden;
+}
+
+figure:before {
+  background: none repeat scroll 0 0 #007eab;
+  color: #fff;
+  content: "Image with Caption";
+  opacity: 0.65;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: table;
+  padding: 2px 4px;
+  border-bottom-left-radius: 3px;
+}
+figure:after {
+  content: " "; 
+  display: table; 
+  clear: both;
+}
+/* fix for resized images */
+figure img {
+	width: 100%;
+	height: auto;
+}

@@ -3,23 +3,23 @@
  */
 (function($){
 
-    CKEDITOR.plugins.add('2columns', {
+    CKEDITOR.plugins.add('twocolumns', {
         requires: 'widget',
         init: function( editor ) {
 
             // Add our plugin-specific CSS to style the widget within CKEditor.
-            editor.addContentsCss( this.path + 'css/editor-2columns.css' );
+            editor.addContentsCss( this.path + 'css/editor-twocolumns.css' );
 
             // Register the toolbar buttons for the CKEditor editor instance.
-            editor.ui.addButton('2columns',
+            editor.ui.addButton('twocolumns',
                 {
-                    label : 'Insert 2 Columns',
-                    icon : this.path + '2columns.png',
-                    command : '2columns'
+                    label : 'Insert 2 Bootstrap v.2 Columns',
+                    icon : this.path + 'twocolumns.png',
+                    command : 'twocolumns'
                 });
 
             // Register the widget.
-            editor.widgets.add('2columns', {
+            editor.widgets.add('twocolumns', {
                 template:   '<div class="columns-2 clearfix row-fluid">' +
                             '<div class="span6"><p>First Column</p></div>' +
                             '<div class="span6"><p>Second Column</p></div>' +

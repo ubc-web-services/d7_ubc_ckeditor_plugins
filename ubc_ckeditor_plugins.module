@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: veades
- * Date: 2015-04-17
- * Time: 2:29 PM
- */
 
 /**
  * Implements hook_ckeditor_plugin().
@@ -13,7 +7,7 @@ function ubc_ckeditor_plugins_ckeditor_plugin() {
     return array(
         'accordion' => array(
           'name' => 'accordion',
-          'desc' => t('CKEditor widget to insert an accordion.'),
+          'desc' => t('Widget to insert an accordion.'),
           'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/accordion/',
           'buttons' => array(
             'accordion' => array(
@@ -22,22 +16,20 @@ function ubc_ckeditor_plugins_ckeditor_plugin() {
             ),
           ),
         ),
-        /*'columns' => array(
-            'name' => 'columns',
-            'desc' => t('CKEditor plugin to insert columns.'),
-            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/columns/',
-            'buttons' => array(
-                'columns' => array(
-                    'label' => 'Insert Columns',
-                    'icon' => 'icons/columns.png',
-                ),
+        'accordiontoggle' => array(
+          'name' => 'accordiontoggle',
+          'desc' => t('Widget to insert an accordion toggle for all accordions on the page.'),
+          'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/accordiontoggle/',
+          'buttons' => array(
+            'accordiontoggle' => array(
+              'label' => 'Insert Accordion Open / Close All Button',
+              'icon' => 'icon-accordiontoggle.png',
             ),
+          ),
         ),
-        */
-        
         'callout' => array(
             'name' => 'callout',
-            'desc' => t('CKEditor plugin to insert a callout.'),
+            'desc' => t('Widget to insert a callout.'),
             'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/callout/',
             'buttons' => array(
                 'callout' => array(
@@ -46,10 +38,9 @@ function ubc_ckeditor_plugins_ckeditor_plugin() {
                 ),
             ),
         ),
-        
         'media-object' => array(
             'name' => 'media-object',
-            'desc' => t('CKEditor plugin to insert a media object.'),
+            'desc' => t('Widget to insert a media object.'),
             'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/media-object/',
             'buttons' => array(
                 'media-object' => array(
@@ -58,88 +49,137 @@ function ubc_ckeditor_plugins_ckeditor_plugin() {
                 ),
             ),
         ),
-        
-        '2columns' => array(
-            'name' => '2columns',
-            'desc' => t('CKEditor plugin to insert 2 columns.'),
-            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/2columns/',
+        'twocolumns' => array(
+            'name' => 'twocolumns',
+            'desc' => t('Widget to insert 2 Bootstrap v.2 columns.'),
+            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/twocolumns/',
             'buttons' => array(
-                '2columns' => array(
-                    'label' => 'Insert 2 Columns',
-                    'icon' => '2columns.png',
+                'twocolumns' => array(
+                    'label' => 'Insert 2 Bootstrap v.2 Columns',
+                    'icon' => 'twocolumns.png',
                 ),
             ),
         ),
-        '3columns' => array(
-            'name' => '3columns',
-            'desc' => t('CKEditor plugin to insert 3 columns.'),
-            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/3columns/',
+        'threecolumns' => array(
+            'name' => 'threecolumns',
+            'desc' => t('Widget to insert 3 Bootstrap v.2 columns.'),
+            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/threecolumns/',
             'buttons' => array(
-                '3columns' => array(
-                    'label' => 'Insert 3 Columns',
-                    'icon' => '3columns.png',
+                'threecolumns' => array(
+                    'label' => 'Insert 3 Bootstrap v.2 Columns',
+                    'icon' => 'threecolumns.png',
                 ),
             ),
         ),
         'bs3-2columns' => array(
             'name' => 'bs3-2columns',
-            'desc' => t('CKEditor plugin to insert 2 Bootstrap v.3 columns.'),
+            'desc' => t('Widget to insert 2 columns.'),
             'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/bs3-2columns/',
             'buttons' => array(
                 'bs3-2columns' => array(
-                    'label' => 'Insert 2 Bootstrap v.3 columns',
+                    'label' => 'Insert 2 columns',
                     'icon' => 'bs3-2columns.png',
                 ),
             ),
         ),
         'bs3-2columns-2-1' => array(
             'name' => 'bs3-2columns-2-1',
-            'desc' => t('CKEditor plugin to insert 2 Bootstrap v.3 columns (two thirds, then one third).'),
+            'desc' => t('Widget to insert 2 columns (two thirds, then one third).'),
             'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/bs3-2columns-2-1/',
             'buttons' => array(
                 'bs3-2columns-2-1' => array(
-                    'label' => 'Insert 2 Bootstrap v.3 columns (two thirds, then one third)',
+                    'label' => 'Insert 2 columns (two thirds, then one third)',
                     'icon' => 'bs3-2columns-2-1.png',
                 ),
             ),
         ),
         'bs3-2columns-1-2' => array(
             'name' => 'bs3-2columns-1-2',
-            'desc' => t('CKEditor plugin to insert 2 Bootstrap v.3 columns (one third, then two thirds).'),
+            'desc' => t('Widget to insert 2 columns (one third, then two thirds).'),
             'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/bs3-2columns-1-2/',
             'buttons' => array(
                 'bs3-2columns-1-2' => array(
-                    'label' => 'Insert 2 Bootstrap v.3 columns (one third, then two thirds)',
+                    'label' => 'Insert 2 columns (one third, then two thirds)',
                     'icon' => 'bs3-2columns-1-2.png',
                 ),
             ),
         ),
         'bs3-3columns' => array(
             'name' => 'bs3-3columns',
-            'desc' => t('CKEditor plugin to insert 3 Bootstrap v.3 columns.'),
+            'desc' => t('Widget to insert 3 columns.'),
             'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/bs3-3columns/',
             'buttons' => array(
                 'bs3-3columns' => array(
-                    'label' => 'Insert 3 Bootstrap v.3 columns',
+                    'label' => 'Insert 3 columns',
                     'icon' => 'bs3-3columns.png',
                 ),
             ),
         ),
-        '3tabs' => array(
-            'name' => '3tabs',
-            'desc' => t('CKEditor plugin to insert 3 tabs.'),
-            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/3tabs/',
+		'ctarow-two' => array(
+            'name' => 'ctarow-two',
+            'desc' => t('Widget to insert 2 Call To Action boxes.'),
+            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/ctarow-two/',
             'buttons' => array(
-                '3tabs' => array(
-                    'label' => 'Insert 3 Tabs',
-                    'icon' => '3tabs.png',
+                'ctarow-two' => array(
+                    'label' => 'Insert 2 Call To Action boxes',
+                    'icon' => 'ctarow-two.png',
                 ),
             ),
         ),
+        'ctarow-three' => array(
+            'name' => 'ctarow-three',
+            'desc' => t('Widget to insert 3 Call To Action boxes.'),
+            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/ctarow-three/',
+            'buttons' => array(
+                'ctarow-three' => array(
+                    'label' => 'Insert 3 Call To Action boxes',
+                    'icon' => 'ctarow-three.png',
+                ),
+            ),
+        ),
+        'img-and-caption' => array(
+            'name' => 'img-and-caption',
+            'desc' => t('Widget to insert an image with a caption.'),
+            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/img-and-caption/',
+            'buttons' => array(
+                'img-and-caption' => array(
+                    'label' => 'Insert an image with a caption',
+                    'icon' => 'img-and-caption.png',
+                ),
+            ),
+        ),
+		/*
+        'fontawesome' => array(
+            'name' => 'fontawesome',
+            'desc' => t('Widget to insert a fontawesome icon.'),
+            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/fontawesome/',
+            'buttons' => array(
+                'fontawesome' => array(
+                    'label' => 'Insert a fontawesome icon',
+                    'icon' => 'fontawesome.png',
+                ),
+            ),
+        ),
+		*/
+		
+		/*
+        'btgrid' => array(
+            'name' => 'btgrid',
+            'desc' => t('Widget to insert a btgrid.'),
+            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/btgrid/',
+            'buttons' => array(
+                'btgrid' => array(
+                    'label' => 'Insert a btgrid',
+                    'icon' => 'icons/btgrid.png',
+                ),
+            ),
+        ),
+		*/
 
+		/*
         'listgroup' => array(
             'name' => 'listgroup',
-            'desc' => t('CKEditor plugin to insert a list-group button.'),
+            'desc' => t('Widget to insert a list-group button.'),
             'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/listgroup/',
             'buttons' => array(
                 'listgroup' => array(
@@ -148,6 +188,7 @@ function ubc_ckeditor_plugins_ckeditor_plugin() {
                 ),
             ),
         ),
+		*/
     );
 }
 
@@ -160,10 +201,11 @@ function ubc_ckeditor_plugins_entity_view($entity, $type, $view_mode, $langcode)
     drupal_add_library('system', 'ui.accordion');
     // Load our JS file that implements jQuery UI Accordion.
     drupal_add_js(drupal_get_path('module', 'ubc_ckeditor_plugins') . '/js/ubc_ckeditor_plugins.js');
+	/*
+	// don't remove empty span (needs to go on edit page - this is incorrect hook)
+	drupal_add_js('CKEDITOR.dtd.$removeEmpty["span"] = false;',
+	    array('type' => 'inline', 'scope' => 'header', 'group' => JS_DEFAULT, 'every_page' => TRUE, 'weight' => 10)
+	  ); 
+	*/
 
 }
-
-/*function ubc_ckeditor_plugins_ckeditor_settings_alter(&$settings, $conf) {
-    // Change the ckeditor config path.
-    $settings['customConfig'] = drupal_get_path('module', 'ubc_ckeditor_plugins') . '/ckeditor.config.js';
-}*/
