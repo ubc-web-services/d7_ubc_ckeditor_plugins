@@ -32,7 +32,7 @@
 				editables: {
 					imagearea: {
 						selector: 'div[data-widget-image]',
-						allowedContent: 'img[!src,class,data-*,alt,title];source[data-*,srcset];picture[data-*];a[href,target,data-*]'
+						allowedContent: 'img[!src,class,data-*,alt,title];source[data-*,srcset];media;picture[data-*];a[href,target,data-*]'
 					},
 					captionarea: {
 						selector: 'figcaption',
