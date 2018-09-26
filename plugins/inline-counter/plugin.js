@@ -1,6 +1,6 @@
 (function($){
 
-    CKEDITOR.plugins.add('accordion', {
+    CKEDITOR.plugins.add('inline-counter', {
       requires: 'widget',
       init: function(editor) {
         // Register the toolbar buttons for the CKEditor editor instance.

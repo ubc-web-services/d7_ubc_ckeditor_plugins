@@ -189,6 +189,20 @@ function ubc_ckeditor_plugins_ckeditor_plugin() {
             ),
         ),
 		*/
+
+        /*
+        'inline-counter' => array(
+            'name' => 'inline-counter',
+            'desc' => t('Widget to insert a inline counter.'),
+            'path' => drupal_get_path('module', 'ubc_ckeditor_plugins') . '/plugins/inline-counter/',
+            'buttons' => array(
+                'inline-counter' => array(
+                    'label' => 'Insert a inline-counter button',
+                    'icon' => 'test.png',
+                ),
+            ),
+        ),
+		*/
     );
 }
 
