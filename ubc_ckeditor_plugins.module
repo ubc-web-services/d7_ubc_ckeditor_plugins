@@ -190,7 +190,6 @@ function ubc_ckeditor_plugins_ckeditor_plugin() {
         ),
 		*/
 
-        /*
         'inline-counter' => array(
             'name' => 'inline-counter',
             'desc' => t('Widget to insert a inline counter.'),
@@ -202,7 +201,7 @@ function ubc_ckeditor_plugins_ckeditor_plugin() {
                 ),
             ),
         ),
-		*/
+		
     );
 }
 

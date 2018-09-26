@@ -24,7 +24,7 @@
             '<div class="stats-area text-center">' + 
                 '<div class="inline counter">' +
                     '<span class="counter-number">counter number goes in here</span>' +
-                    '<div class="counter-title>counter title goes in here</div>' +
+                    '<div class="counter-title">counter title goes in here</div>' +
                 '</div>' +
             '</div>',
           
