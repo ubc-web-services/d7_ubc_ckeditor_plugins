@@ -1,0 +1,36 @@
+.inline-counter {
+    position: relative;
+      margin: 10px;
+      background: #eee;
+      border: 1px dashed #ddd;
+  }
+  .counter-title {
+    margin: 5px;
+      box-shadow: 0 1px 1px #ddd inset;
+      border: 1px solid #cccccc;
+      background: #fff;
+      padding: 1em;
+  }
+  .counter-number {
+    font-weight: bold;
+  }
+  
+  .inline-counter:before {
+    background: none repeat scroll 0 0 #007eab;
+    color: #fff;
+    content: "inline-counter";
+    opacity: 0.65;
+    line-height: 1em;
+    position: absolute;
+    line-height: 1em;
+    z-index: 9999;
+    padding: 2px 4px;
+    border-bottom-left-radius: 3px;
+    right: 0;
+    top: 0;
+  }
+  /* fix for resized images */
+  .inline-counter img {
+      width: 100%;
+      height: auto;
+  }
